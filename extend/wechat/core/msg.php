@@ -48,57 +48,57 @@ class msg{
 	
 	//构造函数
 	function __construct(){
-			// 获取通用信息
-			$this->fromUserName = 'fromUserName';
-            $this->toUserName = 'toUserName';
-            $this->msgType = 'link';
-            $this->createTime = time();
-            $this->msgId = 'msgId12345';
-            
-            if($this->msgType=="text"){
-            		$this->keyWord = 'keyWord'; 
-            }
-            
-            if($this->msgType=="image"){
-            		$this->picUrl = 'picUrl';
-            		$this->mediaId = 'mediaId';
-            }
-            if($this->msgType=="voice"){
-            		$this->format = 'format';
-            		$this->mediaId = 'mediaId';
-            		$this->recognition = 'recognition';
-            }
-            
-            if($this->msgType=="video" || $this->msgType=="shortvideo"){
-            		$this->thumbMediaId = 'video';
-            		$this->mediaId = 'video';
-            }
-            
-            if($this->msgType=="location"){
-            		 $this->latX ='latX';
-            		 $this->lngY ='lngY';
-            		 $this->scale = 'scale';
-            		 $this->label = 'label';
-            }
-            
-            if($this->msgType=="link"){
-            		 $this->title = 'title';
-            		 $this->description = 'description';
-            		 $this->url = 'url';
-            }
-            
-             if($this->msgType=="event"){
-            		$this->eventType = 'eventType';
-            		$this->eventKey = 'eventKey';
-            		switch($this->eventType){
-            			case 'subscribe':$this->ticket = '';break;
-            			case 'SCAN':$this->ticket ='';break;
-            			case 'LOCATION':{
-            				$this->lat = 3.1415926;
-            				$this->lng = 3.1415926;
-            				$this->precision = '1';
-            			} break;
-            		}
-            }      
+		// 获取通用信息
+		$this->fromUserName = 'fromUserName';
+        $this->toUserName = 'toUserName';
+        $this->msgType = 'link';
+        $this->createTime = time();
+        $this->msgId = 'msgId12345';
+        
+        if($this->msgType=="text"){
+        		$this->keyWord = 'keyWord'; 
+        }
+        
+        if($this->msgType=="image"){
+        		$this->picUrl = 'picUrl';
+        		$this->mediaId = 'mediaId';
+        }
+        if($this->msgType=="voice"){
+        		$this->format = 'format';
+        		$this->mediaId = 'mediaId';
+        		$this->recognition = 'recognition';
+        }
+        
+        if($this->msgType=="video" || $this->msgType=="shortvideo"){
+        		$this->thumbMediaId = 'video';
+        		$this->mediaId = 'video';
+        }
+        
+        if($this->msgType=="location"){
+        		 $this->latX ='latX';
+        		 $this->lngY ='lngY';
+        		 $this->scale = 'scale';
+        		 $this->label = 'label';
+        }
+        
+        if($this->msgType=="link"){
+        		 $this->title = 'title';
+        		 $this->description = 'description';
+        		 $this->url = 'url';
+        }
+        
+         if($this->msgType=="event"){
+        		$this->eventType = 'eventType';
+        		$this->eventKey = 'eventKey';
+        		switch($this->eventType){
+        			case 'subscribe':$this->ticket = '';break;
+        			case 'SCAN':$this->ticket ='';break;
+        			case 'LOCATION':{
+        				$this->lat = 3.1415926;
+        				$this->lng = 3.1415926;
+        				$this->precision = '1';
+        			} break;
+        		}
+        }      
 	}
 }
