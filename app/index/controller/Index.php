@@ -4,7 +4,9 @@ namespace app\index\controller;
 class Index
 {
     public function index()
-    {
-        return json([status=>0,'msg'=>'hello']);
+    {   
+        dump(input("post.a"));
+        dump(input("get.token"));
+        dump(input("server.HTTP_TOKEN"));
     }
 }
