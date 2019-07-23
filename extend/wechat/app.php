@@ -1,5 +1,5 @@
 <?php
 
-interface app{}
+class app{}
     
 ?>

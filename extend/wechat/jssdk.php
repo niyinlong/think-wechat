@@ -1,6 +1,6 @@
 <?php
 
-interface jssdk{
+class jssdk{
 
 }
 
