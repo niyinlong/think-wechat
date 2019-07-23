@@ -4,7 +4,8 @@
  * @function：网络访问类
  *
  */
-namespace wechat\core;
+namespace util;
+
 class curl {
 	private static $_ch;
 	private static $_header;
@@ -61,7 +62,6 @@ class curl {
 		if (is_resource(self::$_ch)) {
 			curl_close(self::$_ch);
 		}
-
 		return true;
 	}
 

@@ -28,7 +28,6 @@ class geohash{
 		{
 			$this->codingMap[substr($this->coding,$i,1)]=str_pad(decbin($i), 5, "0", STR_PAD_LEFT);
 		}
-		
 	}
 	
 	/**
